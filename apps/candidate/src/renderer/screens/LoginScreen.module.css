@@ -1,0 +1,62 @@
+.container { display: flex; flex-direction: column; height: 100vh; }
+
+.topBar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+}
+.role { font-size: 11px; color: var(--text-muted); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+.logo { font-size: 15px; font-weight: 700; color: var(--accent); }
+
+.content {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 16px; padding: 24px;
+}
+
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 32px; width: 100%; max-width: 420px;
+  display: flex; flex-direction: column; gap: 20px;
+}
+
+.heading { font-size: 18px; font-weight: 700; }
+.sub { font-size: 13px; color: var(--text-secondary); }
+
+.fieldGroup { display: flex; flex-direction: column; gap: 6px; }
+.label { font-size: 11px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+.codeInput {
+  background: var(--bg-input); border: 1px solid var(--border);
+  border-radius: 8px; padding: 12px 16px;
+  font-size: 24px; font-weight: 700; letter-spacing: 0.3em;
+  text-align: center; width: 100%; color: var(--text-primary);
+  transition: border-color 0.15s;
+}
+.codeInput:focus { border-color: var(--border-focus); }
+.codeInput:disabled { opacity: 0.5; }
+
+.input {
+  background: var(--bg-input); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 14px; width: 100%;
+  font-size: 14px; color: var(--text-primary); transition: border-color 0.15s;
+}
+.input:focus { border-color: var(--border-focus); outline: 2px solid var(--accent-glow); }
+
+.hint { font-size: 11px; color: var(--text-muted); }
+.error { font-size: 12px; color: var(--danger); padding: 8px 12px; background: rgba(239,68,68,0.1); border-radius: 6px; }
+
+.spinner {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--text-secondary); font-size: 13px;
+}
+.spinnerDot {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--accent); animation: pulse 0.8s ease-in-out infinite;
+}
+
+.retryBtn {
+  margin-top: 12px; font-size: 13px; color: var(--accent);
+  background: none; cursor: pointer; padding: 0;
+}
+.retryBtn:hover { text-decoration: underline; }
+
+.privacy { font-size: 11px; color: var(--text-muted); text-align: center; max-width: 340px; }

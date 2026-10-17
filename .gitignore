@@ -1,0 +1,15 @@
+.env
+node_modules
+dist
+out
+dist-electron
+.turbo
+*.log
+coverage
+*.tsbuildinfo
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+Thumbs.db
+*.local

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 12px;
+}
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 48px 40px; max-width: 400px;
+  display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center;
+  flex: 0 0 auto;
+}
+.icon {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: rgba(34,197,94,0.15); border: 2px solid var(--success);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; color: var(--success); font-weight: 700;
+}
+.heading { font-size: 20px; font-weight: 700; }
+.sub { font-size: 14px; color: var(--text-secondary); }
+.note { font-size: 12px; color: var(--text-muted); line-height: 1.6; }

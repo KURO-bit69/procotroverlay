@@ -1,0 +1,26 @@
+.container { display: flex; flex-direction: column; height: 100vh; min-height: 0; overflow-x: hidden; overflow-y: auto; }
+
+.topBar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  flex-shrink: 0; background: var(--bg-surface);
+}
+.role { font-size: 11px; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
+.logo { font-size: 15px; font-weight: 700; color: var(--accent); }
+
+.grid {
+  flex: none; min-height: 660px; display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(320px, 1fr));
+  gap: 12px; padding: 12px; overflow: visible;
+}
+.grid > :nth-child(3) { grid-column: 1 / -1; }
+
+.bottomBar {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 20px; border-top: 1px solid var(--border);
+  background: var(--bg-surface); flex-shrink: 0;
+}
+.sessionLabel { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.sessionCode { font-size: 12px; color: var(--success); font-weight: 600; }
+.hint { margin-left: auto; font-size: 11px; color: var(--text-muted); }
